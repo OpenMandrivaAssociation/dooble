@@ -1,0 +1,15 @@
+diff -up dooble-2022.06.15/Source/dooble_address_widget.cc.omv~ dooble-2022.06.15/Source/dooble_address_widget.cc
+--- dooble-2022.06.15/Source/dooble_address_widget.cc.omv~	2022-09-14 19:13:31.249687232 +0200
++++ dooble-2022.06.15/Source/dooble_address_widget.cc	2022-09-14 19:15:56.506017105 +0200
+@@ -515,7 +515,10 @@ void dooble_address_widget::slot_populat
+ void dooble_address_widget::slot_return_pressed(void)
+ {
+   m_completer->popup()->setVisible(false);
+-  setText(text());
++  QString s = text();
++  if(!s.contains(":") && !s.startsWith('/') && s.contains('.') && !s.contains(' '))
++	  s.prepend("https://");
++  setText(s);
+ }
+ 
+ void dooble_address_widget::slot_settings_applied(void)
