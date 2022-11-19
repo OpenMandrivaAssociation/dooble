@@ -1,10 +1,10 @@
 %global debug_package %{nil}
 
 Name: dooble
-Version: 2022.06.15
+Version: 2022.11.15
 Release: 1
 Source0: https://github.com/textbrowser/dooble/archive/refs/tags/%{version}.tar.gz
-Patch0: dooble-2022.06.15-compile.patch
+#Patch0: dooble-2022.06.15-compile.patch
 Patch1: dooble-2022.06.15-prepend-https.patch
 Summary: Simple lightweight web browser
 URL: https://textbrowser.github.io/dooble
@@ -39,6 +39,7 @@ Simple lightweight web browser
 %prep
 %autosetup -p1
 export QTDIR=%{_qtdir}
+sed -i -e 's,-Werror,,g' dooble.pro
 %{_qtdir}/bin/qmake dooble.pro
 
 %build
