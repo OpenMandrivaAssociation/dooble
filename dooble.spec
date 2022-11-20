@@ -2,7 +2,7 @@
 
 Name: dooble
 Version: 2022.11.15
-Release: 1
+Release: 2
 Source0: https://github.com/textbrowser/dooble/archive/refs/tags/%{version}.tar.gz
 Patch1: dooble-2022.06.15-prepend-https.patch
 Summary: Simple lightweight web browser
@@ -31,6 +31,8 @@ BuildRequires: qt6-cmake
 BuildRequires: make
 # Just for scaling/converting icons
 BuildRequires: imagemagick
+# For storing settings
+Requires:	qt6-qtbase-sql-sqlite
 
 %description
 Simple lightweight web browser
