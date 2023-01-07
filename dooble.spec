@@ -1,10 +1,9 @@
 %global debug_package %{nil}
 
 Name: dooble
-Version: 2022.11.15
-Release: 2
+Version: 2022.12.25
+Release: 1
 Source0: https://github.com/textbrowser/dooble/archive/refs/tags/%{version}.tar.gz
-Patch1: dooble-2022.06.15-prepend-https.patch
 Summary: Simple lightweight web browser
 URL: https://textbrowser.github.io/dooble
 License: MIT
