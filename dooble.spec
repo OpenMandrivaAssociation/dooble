@@ -2,7 +2,7 @@
 
 Name: dooble
 Version: 2023.02.25
-Release: 1
+Release: 2
 Source0: https://github.com/textbrowser/dooble/archive/refs/tags/%{version}.tar.gz
 Summary: Simple lightweight web browser
 URL: https://textbrowser.github.io/dooble
