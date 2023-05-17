@@ -3,7 +3,7 @@
 Name: dooble
 Version: 2023.04.20
 Release: 1
-Source0: https://github.com/textbrowser/dooble/archive/refs/tags/%{version}.tar.gz
+Source0: https://github.com/textbrowser/dooble/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 Summary: Simple lightweight web browser
 URL: https://textbrowser.github.io/dooble
 License: MIT
