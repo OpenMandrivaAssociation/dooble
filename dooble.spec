@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: dooble
-Version: 2023.04.20
+Version: 2023.05.31
 Release: 1
 Source0: https://github.com/textbrowser/dooble/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 Summary: Simple lightweight web browser
