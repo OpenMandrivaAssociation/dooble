@@ -57,7 +57,7 @@ chmod 0755 %{buildroot}%{_bindir}/dooble
 mkdir -p %{buildroot}%{_qtdir}/translations/qtwebengine_locales
 mv qtwebengine_dictionaries/* %{buildroot}%{_qtdir}/translations/qtwebengine_locales
 mkdir -p %{buildroot}%{_datadir}/applications
-mv dooble.desktop %{buildroot}%{_datadir}/applications/
+mv Distributions/dooble.desktop %{buildroot}%{_datadir}/applications/
 for scale in 16 20 22 24 32 36 40 44 48 64 72 80 96 128 150 160 192 256 512 ; do
 	mkdir -p %{buildroot}%{_datadir}/icons/hicolor/${scale}x${scale}/apps
 	convert Icons/dooble.ico -scale ${scale}x${scale} %{buildroot}%{_datadir}/icons/hicolor/${scale}x${scale}/apps/dooble.png
