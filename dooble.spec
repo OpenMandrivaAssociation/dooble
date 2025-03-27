@@ -1,7 +1,7 @@
 %global debug_package %{nil}
 
 Name: dooble
-Version: 2024.11.17
+Version: 2025.03.27
 Release: 1
 Source0: https://github.com/textbrowser/dooble/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 Summary: Simple lightweight web browser
@@ -54,8 +54,8 @@ export QT_PLUGIN_PATH=%{_qtdir}/plugins
 exec %{_bindir}/Dooble "$@"
 EOF
 chmod 0755 %{buildroot}%{_bindir}/dooble
-mkdir -p %{buildroot}%{_qtdir}/translations/qtwebengine_locales
-mv qtwebengine_dictionaries/* %{buildroot}%{_qtdir}/translations/qtwebengine_locales
+#mkdir -p %{buildroot}%{_qtdir}/translations/qtwebengine_locales
+#mv qtwebengine_dictionaries/* %{buildroot}%{_qtdir}/translations/qtwebengine_locales
 mkdir -p %{buildroot}%{_datadir}/applications
 mv Distributions/dooble.desktop %{buildroot}%{_datadir}/applications/
 for scale in 16 20 22 24 32 36 40 44 48 64 72 80 96 128 150 160 192 256 512 ; do
@@ -66,6 +66,6 @@ done
 %files
 %{_bindir}/dooble
 %{_bindir}/Dooble
-%{_qtdir}/translations/qtwebengine_locales
+#%{_qtdir}/translations/qtwebengine_locales
 %{_datadir}/applications/dooble.desktop
 %{_datadir}/icons/*/*/*/*
