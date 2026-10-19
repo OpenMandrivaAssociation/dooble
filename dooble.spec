@@ -1,8 +1,8 @@
 %global debug_package %{nil}
 
 Name: dooble
-Version: 2026.08.21
-Release: 2
+Version: 2026.10.17
+Release: 1
 Source0: https://github.com/textbrowser/dooble/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
 Summary: Simple lightweight web browser
 URL: https://textbrowser.github.io/dooble
